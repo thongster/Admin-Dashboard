@@ -312,4 +312,13 @@ input[type="search"] {
   width: 4rem;
 }
 
+.footer {
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-content: center;
+  height: 3rem;
+}
 
+.footer a {
+  color: black;
+}
