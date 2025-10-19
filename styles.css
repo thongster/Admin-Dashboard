@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 /* After Reset */
 
 * {
-  border: 1px solid red;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -258,6 +258,8 @@ input[type="search"] {
   background-color: white;
   border: none;
   border-radius: 12px;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .announcements {
@@ -265,9 +267,20 @@ input[type="search"] {
   grid-template-rows: repeat(3, 1fr);
 }
 
+.announcements > div > p:first-child {
+  font-weight: 700;
+}
+
 .trending {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 3px;
+  align-items: center;
+}
+
+.trending > div:nth-child(odd) {
+  justify-items: center;
 }
 
 .announcementtitle {
@@ -287,3 +300,16 @@ input[type="search"] {
 .card, .announcements, .trending {
   box-shadow: 0 1px 3px black;
 }
+
+.trending > div > p:first-child {
+  font-weight: 700;
+}
+
+.trending > div > img {
+  border-radius: 100%;
+  object-fit: cover;
+  height: 4rem;
+  width: 4rem;
+}
+
+
