@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-row: 1 / 2;
 
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 0 2rem 0 2rem;
 }
@@ -136,10 +136,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .lowerleft {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 10% 80%;
   grid-template-rows: 1fr 2fr;
   margin: 0 0 0.5rem 0;
   font-weight: 700;
+  align-items: center;
 }
 
 .lowerleft > img.profile {
@@ -149,6 +150,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .lowerleft > span:nth-child(3) {
   font-size: 24px;
+}
+
+.lowerright {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.lowerright > button {
+  border-radius: 18px;
+  background-color: #38a3e0;
+  color: white;
+  font-weight: 700;
+  padding: 2px 1rem 2px 1rem;
 }
 
 .main {
